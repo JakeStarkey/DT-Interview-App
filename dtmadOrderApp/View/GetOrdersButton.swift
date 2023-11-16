@@ -9,11 +9,11 @@ import SwiftUI
 
 struct GetOrdersButton: View {
     
-    let getOrders: () -> Void
-    
+    @EnvironmentObject var viewModel: OrderViewModel
+        
     var body: some View {
         Button("Get 50 Orders") {
-            getOrders()
+            viewModel.getOrders()
         }
         .buttonStyle(.borderedProminent)
     }

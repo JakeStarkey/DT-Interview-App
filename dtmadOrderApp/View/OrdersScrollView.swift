@@ -9,13 +9,11 @@ import SwiftUI
 
 struct OrdersScrollView: View {
     
-    @State var isWaiting: OrderViewModel.APIWait
+    @EnvironmentObject var viewModel: OrderViewModel
         
-    @State var orders: [Order]
-    
     var body: some View {
         VStack {
-            switch isWaiting {
+            switch viewModel.isWaiting {
                 case .notWaiting:
                     orderSearch
                 case .waiting:
@@ -29,10 +27,14 @@ struct OrdersScrollView: View {
     
     private var orderSearch: some View {
         ScrollView {
-            ForEach(orders) { order in
-                OrderListItem(order: order)
-            }
+                ForEach(viewModel.orders) { order in
+                    OrderListItem(order: order)
+                }
+            
+            
         }
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 8)
     }
     
 }

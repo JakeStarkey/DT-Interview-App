@@ -9,16 +9,13 @@ import SwiftUI
 
 struct OrderView: View {
     
-    @ObservedObject var viewModel: OrderViewModel
+    @EnvironmentObject var viewModel: OrderViewModel
     
     var body: some View {
         VStack {
-            GetOrdersButton(getOrders: viewModel.getOrders)
+            GetOrdersButton()
             Spacer()
-            OrdersScrollView(
-                isWaiting: viewModel.isWaiting,
-                orders: viewModel.orders
-            )
+            OrdersScrollView()
             Spacer()
         }
     }

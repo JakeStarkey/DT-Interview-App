@@ -11,7 +11,8 @@ import SwiftUI
 struct dtmadOrderAppApp: App {
     var body: some Scene {
         WindowGroup {
-            OrderView(viewModel: OrderViewModel())
+            OrderView()
+                .environmentObject(OrderViewModel())
         }
     }
 }

@@ -18,17 +18,17 @@ struct OrderAPIHandler {
         }
         
         guard let url = URL(string:
-            "https://dtmad-store.up.railway.app/api/v1/orders?count=1")
+            "http://dtmad-store.up.railway.app/api/v1/orders?count=50")
         else { throw OrderAPIError.invalidURL}
         
         var request = URLRequest(url: url)
-        request.setValue("UndYxaTF7VnzVGQRYjAvzgtwvKXbrbBrDtZ5KQQbj0j6GXW1BU1BRk7aTrcvATHu", forHTTPHeaderField: "x-api-key")
+        request.setValue("UndYxaTF7VnzVGQRYjAvzgtwvKXbrbBrDtZ5KQQbj0j6GXW1BU1BRk7aTrcvATHu", forHTTPHeaderField: "X-Api-Key")
                 
-        struct ResultWrapper: Codable {
-            let orders: Orders
+        struct ResultWrapper<Object: Codable>: Codable {
+            let results: [Order]
         }
         
-        let result: ResultWrapper = try await URLSession.shared.object(for: request)
-        return result.orders.results
+        let result: ResultWrapper<Order> = try await URLSession.shared.object(for: request)
+        return result.results
     }
 }

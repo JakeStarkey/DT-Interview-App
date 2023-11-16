@@ -18,7 +18,6 @@ class OrderViewModel: ObservableObject {
         Task { [weak self] in
             do {
                 let orders = try await OrderAPIHandler.getOrders()
-                print(orders)
                     await MainActor.run { [weak self] in
                         self!.isWaiting = .notWaiting
                         self?.orders = orders
@@ -33,6 +32,10 @@ class OrderViewModel: ObservableObject {
             }
         }
     }
+    
+    
+    
+    
 }
 
 extension OrderViewModel {
@@ -42,4 +45,5 @@ extension OrderViewModel {
         case waiting
         case failed
     }
+    
 }
