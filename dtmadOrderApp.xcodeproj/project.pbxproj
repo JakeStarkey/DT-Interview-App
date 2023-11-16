@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAFB21F62B059E8E0088A432 /* dtmadOrderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB21F52B059E8E0088A432 /* dtmadOrderAppApp.swift */; };
+		BAFB21F62B059E8E0088A432 /* dtmadOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB21F52B059E8E0088A432 /* dtmadOrderApp.swift */; };
 		BAFB21F82B059E8E0088A432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB21F72B059E8E0088A432 /* ContentView.swift */; };
 		BAFB21FA2B059E8F0088A432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB21F92B059E8F0088A432 /* Assets.xcassets */; };
 		BAFB21FD2B059E8F0088A432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB21FC2B059E8F0088A432 /* Preview Assets.xcassets */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		BAFB21F22B059E8E0088A432 /* dtmadOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dtmadOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAFB21F52B059E8E0088A432 /* dtmadOrderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dtmadOrderAppApp.swift; sourceTree = "<group>"; };
+		BAFB21F52B059E8E0088A432 /* dtmadOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dtmadOrderApp.swift; sourceTree = "<group>"; };
 		BAFB21F72B059E8E0088A432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAFB21F92B059E8F0088A432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFB21FC2B059E8F0088A432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				BAFB220B2B05A67E0088A432 /* View */,
 				BAFB22082B05A0AF0088A432 /* Extensions */,
 				BAFB22032B059EDB0088A432 /* Model */,
-				BAFB21F52B059E8E0088A432 /* dtmadOrderAppApp.swift */,
+				BAFB21F52B059E8E0088A432 /* dtmadOrderApp.swift */,
 				BAFB21F72B059E8E0088A432 /* ContentView.swift */,
 				BAFB21F92B059E8F0088A432 /* Assets.xcassets */,
 				BAFB21FB2B059E8F0088A432 /* Preview Content */,
@@ -202,7 +202,7 @@
 				BAFB22142B05B0030088A432 /* OrdersScrollView.swift in Sources */,
 				BAFB21F82B059E8E0088A432 /* ContentView.swift in Sources */,
 				BAFB22102B05A72A0088A432 /* OrderViewModel.swift in Sources */,
-				BAFB21F62B059E8E0088A432 /* dtmadOrderAppApp.swift in Sources */,
+				BAFB21F62B059E8E0088A432 /* dtmadOrderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
