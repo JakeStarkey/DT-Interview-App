@@ -11,6 +11,14 @@
 		BAFB21F82B059E8E0088A432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB21F72B059E8E0088A432 /* ContentView.swift */; };
 		BAFB21FA2B059E8F0088A432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB21F92B059E8F0088A432 /* Assets.xcassets */; };
 		BAFB21FD2B059E8F0088A432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB21FC2B059E8F0088A432 /* Preview Assets.xcassets */; };
+		BAFB22052B059EF60088A432 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22042B059EF60088A432 /* Order.swift */; };
+		BAFB22072B059F500088A432 /* OrderAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22062B059F500088A432 /* OrderAPIHandler.swift */; };
+		BAFB220A2B05A0C20088A432 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22092B05A0C20088A432 /* URLSession.swift */; };
+		BAFB220D2B05A6F30088A432 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB220C2B05A6F30088A432 /* OrderView.swift */; };
+		BAFB22102B05A72A0088A432 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB220F2B05A72A0088A432 /* OrderViewModel.swift */; };
+		BAFB22122B05AD740088A432 /* GetOrdersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22112B05AD740088A432 /* GetOrdersButton.swift */; };
+		BAFB22142B05B0030088A432 /* OrdersScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22132B05B0030088A432 /* OrdersScrollView.swift */; };
+		BAFB22162B05E85F0088A432 /* OrderListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB22152B05E85F0088A432 /* OrderListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		BAFB21F72B059E8E0088A432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAFB21F92B059E8F0088A432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFB21FC2B059E8F0088A432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAFB22042B059EF60088A432 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		BAFB22062B059F500088A432 /* OrderAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAPIHandler.swift; sourceTree = "<group>"; };
+		BAFB22092B05A0C20088A432 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		BAFB220C2B05A6F30088A432 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		BAFB220F2B05A72A0088A432 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		BAFB22112B05AD740088A432 /* GetOrdersButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrdersButton.swift; sourceTree = "<group>"; };
+		BAFB22132B05B0030088A432 /* OrdersScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersScrollView.swift; sourceTree = "<group>"; };
+		BAFB22152B05E85F0088A432 /* OrderListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,10 @@
 		BAFB21F42B059E8E0088A432 /* dtmadOrderApp */ = {
 			isa = PBXGroup;
 			children = (
+				BAFB220E2B05A71F0088A432 /* ViewModel */,
+				BAFB220B2B05A67E0088A432 /* View */,
+				BAFB22082B05A0AF0088A432 /* Extensions */,
+				BAFB22032B059EDB0088A432 /* Model */,
 				BAFB21F52B059E8E0088A432 /* dtmadOrderAppApp.swift */,
 				BAFB21F72B059E8E0088A432 /* ContentView.swift */,
 				BAFB21F92B059E8F0088A432 /* Assets.xcassets */,
@@ -65,6 +85,42 @@
 				BAFB21FC2B059E8F0088A432 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAFB22032B059EDB0088A432 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB22042B059EF60088A432 /* Order.swift */,
+				BAFB22062B059F500088A432 /* OrderAPIHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAFB22082B05A0AF0088A432 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB22092B05A0C20088A432 /* URLSession.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAFB220B2B05A67E0088A432 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB220C2B05A6F30088A432 /* OrderView.swift */,
+				BAFB22112B05AD740088A432 /* GetOrdersButton.swift */,
+				BAFB22132B05B0030088A432 /* OrdersScrollView.swift */,
+				BAFB22152B05E85F0088A432 /* OrderListItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAFB220E2B05A71F0088A432 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB220F2B05A72A0088A432 /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFB22072B059F500088A432 /* OrderAPIHandler.swift in Sources */,
+				BAFB22052B059EF60088A432 /* Order.swift in Sources */,
+				BAFB220A2B05A0C20088A432 /* URLSession.swift in Sources */,
+				BAFB22122B05AD740088A432 /* GetOrdersButton.swift in Sources */,
+				BAFB220D2B05A6F30088A432 /* OrderView.swift in Sources */,
+				BAFB22162B05E85F0088A432 /* OrderListItem.swift in Sources */,
+				BAFB22142B05B0030088A432 /* OrdersScrollView.swift in Sources */,
 				BAFB21F82B059E8E0088A432 /* ContentView.swift in Sources */,
+				BAFB22102B05A72A0088A432 /* OrderViewModel.swift in Sources */,
 				BAFB21F62B059E8E0088A432 /* dtmadOrderAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
